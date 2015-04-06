@@ -29,6 +29,9 @@
 require 'sensu-plugin/check/cli'
 require 'open3'
 
+#
+# Check wpscan
+#
 class WPScan < Sensu::Plugin::Check::CLI
   option :url,
          description: 'Scan target URL',
