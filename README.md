@@ -9,7 +9,7 @@
 ## Functionality
 
 ## Files
-
+ * bin/check-wpscan.rb
 
 ## Usage
 
