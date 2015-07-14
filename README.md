@@ -1,6 +1,6 @@
 ## Sensu-Plugins-wordpress
 
-[![Build Status](https://travis-ci.org/sensu-plugins/sensu-plugins-wordpress.svg?branch=master)](https://travis-ci.org/sensu-plugins/sensu-plugins-wordpress)
+[ ![Build Status](https://travis-ci.org/sensu-plugins/sensu-plugins-wordpress.svg?branch=master)](https://travis-ci.org/sensu-plugins/sensu-plugins-wordpress)
 [![Gem Version](https://badge.fury.io/rb/sensu-plugins-wordpress.svg)](http://badge.fury.io/rb/sensu-plugins-wordpress)
 [![Code Climate](https://codeclimate.com/github/sensu-plugins/sensu-plugins-wordpress/badges/gpa.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-wordpress)
 [![Test Coverage](https://codeclimate.com/github/sensu-plugins/sensu-plugins-wordpress/badges/coverage.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-wordpress)
