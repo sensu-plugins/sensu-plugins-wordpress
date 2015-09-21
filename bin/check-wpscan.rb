@@ -27,7 +27,6 @@
 #
 
 require 'sensu-plugin/check/cli'
-require 'open3'
 
 #
 # Check wpscan
@@ -65,9 +64,9 @@ class WPScan < Sensu::Plugin::Check::CLI
   def run_wpscan
     vulnerabilities = []
 
-    stdout, result = Open3.capture2("echo Y | #{config[:wpscan]} --url #{config[:url]} --follow-redirection --no-color")
+    stdout = `echo Y | #{config[:wpscan]} --url #{config[:url]} --follow-redirection --no-color`
 
-    unknown stdout.split("\n").last unless result.success?
+    unknown stdout.split("\n").last unless stdout =~ /Finished/
 
     stdout.each_line do |line|
       line.scan(/\[(.)\](.*)/).each do |match|
