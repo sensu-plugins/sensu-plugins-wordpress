@@ -1,19 +1,33 @@
 language: ruby
 cache:
-  - bundler
+- bundler
 install:
-  - bundle install
+- bundle install
 rvm:
-  - 1.9.3
-  - 2.0
-  - 2.1
-  - 2.2
+- 1.9.3
+- 2.0
+- 2.1
+- 2.2
 notifications:
   email:
     recipients:
-      - sensu-plugin@sensu-plugins.io
+    - sensu-plugin@sensu-plugins.io
     on_success: change
     on_failure: always
-
 script:
-  - 'bundle exec rake default'
+- bundle exec rake default
+- gem build sensu-plugins-wordpress.gemspec
+- gem install sensu-plugins-wordpress-*.gem
+deploy:
+  provider: rubygems
+  api_key:
+    secure: HBQePm3v1ZxUvZxrlRDxzUHqXa1Ta+Q52jHl64bKdxPA2HBk6hVeqJuZz9i4iFN4IB4ZAh4H3wAURQkvMbeGBYnLMSE61OtvSLH0K8NjO4ENLa711ayPwuFRTui3h5976qsNU9NpHQq4dTSdGA5QuDSDL791HquZljwz2H9ZPZQ=
+  gem: sensu-plugins-wordpress
+  on:
+    repo: sensu-plugins/sensu-plugins-wordpress
+    tags: true
+    all_branches: true
+    rvm: 1.9.3
+    rvm: 2.0
+    rvm: 2.1
+    rvm: 2.2
