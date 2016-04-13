@@ -24,7 +24,7 @@ deploy:
     secure: C9Xd9GK7bMDRwv7Q75lYW5J0cVufp3Ys8ZU1Kcmll6f695b6MMUkjcmc6qCXlT09MRnPXnb2FyqkM8YZs7j9C2cj/jT9SESyikNsN61wkH5Bx0boonDaEnlYz/mksXHoRMaxHgPNPPTaBxz1SA94+foQHzKQezvraIISsYzNQe4=
   gem: sensu-plugins-wordpress
   on:
-    ags: true
+    tags: true
     all_branches: true
     rvm: 1.9.3
     rvm: 2.0
