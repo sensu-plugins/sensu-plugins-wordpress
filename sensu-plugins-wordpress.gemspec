@@ -3,11 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 require 'date'
 
-if RUBY_VERSION < '2.0.0'
-  require 'sensu-plugins-wordpress'
-else
-  require_relative 'lib/sensu-plugins-wordpress'
-end
+require_relative 'lib/sensu-plugins-wordpress'
 
 Gem::Specification.new do |s|
   s.authors                = ['Sensu-Plugins and contributors']
@@ -27,7 +23,7 @@ Gem::Specification.new do |s|
   s.platform               = Gem::Platform::RUBY
   s.post_install_message   = 'You can use the embedded Ruby by setting EMBEDDED_RUBY=true in /etc/default/sensu'
   s.require_paths          = ['lib']
-  s.required_ruby_version  = '>= 1.9.3'
+  s.required_ruby_version  = '>= 2.0.0'
   s.summary                = 'Sensu plugins for Wordpress'
   s.test_files             = s.files.grep(%r{^(test|spec|features)/})
   s.version                = SensuPluginsWordpress::Version::VER_STRING
