@@ -4,14 +4,15 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachangelog.com/)
 
 ## [Unreleased]
+## [1.0.0] 2017-07-03
 ### Added
-- Ruby 2.3.0 & 2.4.1 testing
+- Ruby 2.3.0 & 2.4.1 testing (@EvesyEvesy)
 
 ### Breaking Changes
-- Dropped Ruby 1.9.3 support
+- Dropped Ruby 1.9.3 support (@EvesyEvesy)
 
 ### Fixed
-- PR template spelling
+- PR template spelling (@EvesyEvesy)
 
 ## [0.0.4] - 2016-03-16
 ### Fixed
@@ -29,7 +30,8 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 ### Added
 - initial release
 
-[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-wordpress/compare/0.0.4...HEAD
+[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-wordpress/compare/1.0.0...HEAD
+[1.0.0]: https://github.com/sensu-plugins/sensu-plugins-wordpress/compare/0.0.4...1.0.0
 [0.0.4]: https://github.com/sensu-plugins/sensu-plugins-wordpress/compare/0.0.3...0.0.4
 [0.0.3]: https://github.com/sensu-plugins/sensu-plugins-wordpress/compare/0.0.2...0.0.3
 [0.0.2]: https://github.com/sensu-plugins/sensu-plugins-wordpress/compare/0.0.1...0.0.2
